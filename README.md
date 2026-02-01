@@ -8,7 +8,35 @@
   <a href="https://github.com/badlogic/pi-mono/actions/workflows/ci.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/badlogic/pi-mono/ci.yml?style=flat-square&branch=main" /></a>
 </p>
 
-# Pi Monorepo
+# Pi-Square
+
+> **Fork of [pi-mono](https://github.com/badlogic/pi-mono)** with additional extensions for multi-account management and mode switching.
+
+## 🆕 Pi-Square Extensions
+
+This fork includes custom extensions in [`packages/coding-agent/examples/extensions/pi-square-extensions/`](packages/coding-agent/examples/extensions/pi-square-extensions/):
+
+| Extension | Description |
+|-----------|-------------|
+| **🔄 multi-antigravity** | Multi-account Antigravity management with auto-switching on rate limits |
+| **🎯 mode-switcher** | Plan/Build/Read-only mode switching with UI indicator |
+
+### Quick Install
+
+```bash
+# Copy extensions to your Pi config
+cp packages/coding-agent/examples/extensions/pi-square-extensions/*.ts ~/.pi/agent/extensions/
+```
+
+### Features
+
+- **Multi-Account Antigravity**: Login to multiple Google accounts, auto-switch when hitting rate limits
+- **Mode Switcher**: Toggle between Plan (read-only), Build (full access), and Read-only modes
+- **Keyboard Shortcuts**: `Ctrl+Shift+A` (switch account), `Ctrl+Shift+M` (cycle modes)
+
+---
+
+# Pi Monorepo (Original)
 
 > **Looking for the pi coding agent?** See **[packages/coding-agent](packages/coding-agent)** for installation and usage.
 
